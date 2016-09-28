@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Floats and Page layout</title>
+    <style>
+      body {
+        background-color: white;
+      }
+
+      section {
+        background-color: grey;
+        overflow: hidden;
+        max-width: 1200px;
+      }
+
+      article {
+        background-color: yellow;
+        box-sizing: border-box;
+        float: left;
+        padding-right: 30px;
+        width: 70%;
+      }
+
+      header {
+        background-color: orange;
+        float: left;
+        overflow: hidden;
+        width: 15%;
+      }
+
+      aside {
+        background-color: lightgreen;
+        float: left;
+        overflow: hidden;
+        width: 15%;
+      }
+
+      footer {
+        background-color: lightblue;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut accumsan turpis, ut varius diam. Duis a elementum felis. Suspendisse dapibus nibh eget ipsum vestibulum congue. Quisque vel massa vitae massa hendrerit convallis. Mauris turpis justo, efficitur ut nisi eget, ullamcorper interdum metus. Sed nisi nisi, sagittis vitae nunc non, viverra elementum ex. Suspendisse imperdiet orci ac ornare eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit scelerisque nisl, ut pharetra nisl consectetur sit amet.
+          </p>
+        </header>
+
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non arcu quis neque posuere egestas. Donec ac dictum mi. Nulla blandit sollicitudin urna, vitae vestibulum nisi commodo ut. Proin vitae sem fringilla, dapibus justo vel, posuere ligula. Pellentesque semper, mauris id fermentum ornare, ex elit rhoncus mauris, eu euismod arcu tortor eget velit. Fusce semper nisi gravida, lobortis dui ac, semper magna. Phasellus faucibus, sem ut volutpat vulputate, mauris orci efficitur felis, vel laoreet purus est id ipsum. In in sapien vehicula, egestas nulla at, dapibus augue.
+          </p>
+
+          <p>
+            Vivamus at fermentum ex. Nulla efficitur nibh sit amet sapien semper viverra. Fusce accumsan ipsum vel arcu dictum, eget elementum nunc euismod. Fusce convallis ante ut risus scelerisque pulvinar. Phasellus auctor turpis eu eros ullamcorper, vitae accumsan mauris ullamcorper. Curabitur tincidunt, magna sed tempus efficitur, magna lacus egestas nulla, at pharetra nulla tellus a orci. Fusce tempus dolor suscipit tellus commodo, non tincidunt ex tempus.
+          </p>
+
+          <p>
+            Praesent efficitur non libero vel maximus. In nec eros est. Fusce rutrum, turpis vel placerat consectetur, leo massa sodales nisi, nec fringilla augue erat dapibus mauris. Proin vehicula neque arcu, eu tristique nisl congue eget. Aliquam molestie massa lectus, quis rutrum justo convallis a. Donec et nunc libero. Pellentesque in ullamcorper risus, non dapibus lorem.
+          </p>
+
+          <p>
+            Duis sem nisl, mattis ac porta vel, gravida sed dolor. Quisque euismod interdum felis, non varius lorem auctor vitae. Phasellus varius mauris sit amet pharetra sagittis. Suspendisse laoreet mauris convallis elit accumsan porta. Ut eget ligula in orci cursus tristique. Phasellus sagittis lectus id dui lacinia, id feugiat lacus tristique. Maecenas non euismod risus. Nulla tempus sem ultrices ipsum varius fringilla.
+          </p>
+
+          <p>
+            Vestibulum lobortis magna et quam lobortis, sed fermentum nulla tristique. Curabitur in lobortis lectus, nec auctor nisi. Suspendisse fringilla urna nisi, ac fermentum sem pulvinar eleifend. Sed condimentum ac magna ut aliquet. Sed vel vehicula felis. Phasellus erat purus, luctus eget consectetur a, consequat vel nisi. Etiam non mollis justo. Sed commodo volutpat ipsum non luctus. Maecenas non commodo magna. Sed sed convallis nunc. Donec viverra mi orci, ac consectetur ante commodo non. Etiam aliquet nunc ut arcu finibus, non elementum justo euismod. Sed feugiat, diam in tincidunt pellentesque, augue nisl malesuada tellus, vel condimentum arcu neque vel justo. Curabitur porta condimentum ultricies. Duis congue orci dolor, a semper ipsum efficitur eu. Pellentesque luctus nisi vel purus mollis lacinia.
+          </p>
+        </article>
+
+        <aside>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut accumsan turpis, ut varius diam. Duis a elementum felis. Suspendisse dapibus nibh eget ipsum vestibulum congue. Quisque vel massa vitae massa hendrerit convallis. Mauris turpis justo, efficitur ut nisi eget, ullamcorper interdum metus. Sed nisi nisi, sagittis vitae nunc non, viverra elementum ex. Suspendisse imperdiet orci ac ornare eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit scelerisque nisl, ut pharetra nisl consectetur sit amet.
+          </p>
+
+          <p>
+            Donec porta non risus nec maximus. Phasellus fringilla pellentesque libero quis sodales. Suspendisse vel purus vulputate, molestie tortor non, maximus quam. Cras magna urna, iaculis id vulputate quis, fermentum vel ante. Vestibulum in sagittis lorem. Phasellus mattis fermentum enim, quis interdum diam blandit vel. Curabitur ac mattis orci. Donec cursus arcu nec lobortis pellentesque. Nam scelerisque justo id ornare vulputate. Donec elementum, ex quis pulvinar luctus, erat arcu dictum lectus, id consectetur arcu mauris sit amet tortor.
+          </p>
+        </aside>
+
+        <footer>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut accumsan turpis, ut varius diam. Duis a elementum felis. Suspendisse dapibus nibh eget ipsum vestibulum congue. Quisque vel massa vitae massa hendrerit convallis. Mauris turpis justo, efficitur ut nisi eget, ullamcorper interdum metus. Sed nisi nisi, sagittis vitae nunc non, viverra elementum ex. Suspendisse imperdiet orci ac ornare eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit scelerisque nisl, ut pharetra nisl consectetur sit amet.
+          </p>
+        </footer>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Positioning</title>
+    <style>
+      body {
+        background-color: white;
+      }
+
+      .positioned {
+        background-color: yellow;
+        border: 1px solid black;
+        left: 50%;
+        margin-left: -200px;
+        padding: 15px 30px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 400px;
+        z-index: 2;
+      }
+
+      .intermediate {
+        background: rgba(0, 0, 0, .6);
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        z-index: 1;
+      }
+
+      .partly-outside {
+        background-color: #ccccff;
+        display: block;
+        left: -15px;
+        height: 20px;
+        position: absolute;
+        top: -15px;
+        width: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut accumsan turpis, ut varius diam. Duis a elementum felis. Suspendisse dapibus nibh eget ipsum vestibulum congue. Quisque vel massa vitae massa hendrerit convallis. Mauris turpis justo, efficitur ut nisi eget, ullamcorper interdum metus. Sed nisi nisi, sagittis vitae nunc non, viverra elementum ex. Suspendisse imperdiet orci ac ornare eleifend. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit scelerisque nisl, ut pharetra nisl consectetur sit amet.
+        </p>
+
+        <p>
+          Vivamus at fermentum ex. Nulla efficitur nibh sit amet sapien semper viverra. Fusce accumsan ipsum vel arcu dictum, eget elementum nunc euismod. Fusce convallis ante ut risus scelerisque pulvinar. Phasellus auctor turpis eu eros ullamcorper, vitae accumsan mauris ullamcorper. Curabitur tincidunt, magna sed tempus efficitur, magna lacus egestas nulla, at pharetra nulla tellus a orci. Fusce tempus dolor suscipit tellus commodo, non tincidunt ex tempus.
+        </p>
+
+        <p>
+          Praesent efficitur non libero vel maximus. In nec eros est. Fusce rutrum, turpis vel placerat consectetur, leo massa sodales nisi, nec fringilla augue erat dapibus mauris. Proin vehicula neque arcu, eu tristique nisl congue eget. Aliquam molestie massa lectus, quis rutrum justo convallis a. Donec et nunc libero. Pellentesque in ullamcorper risus, non dapibus lorem.
+        </p>
+      </article>
+
+      <p id="positioned" class="positioned">
+        I'm positioned!
+        <span id="partly-outside" class="partly-outside"> </span>
+      </p>
+
+      <div id="intermediate" class="intermediate"> </div>
+    </main>
+  </body>
+</html>
